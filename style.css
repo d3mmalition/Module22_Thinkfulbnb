@@ -103,7 +103,7 @@ form label {
 
 form select,
 form input {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   width: 65%;
   float: right;
 }
@@ -112,9 +112,9 @@ form button {
   background-color: #ff385c;
   border: none;
   color: #fff;
-  font-size: 24px;
   padding: 15px;
   width: 100%;
+  justify-content: center;
 }
 
 /* -------  Footer ------- */
@@ -136,7 +136,9 @@ footer p {
     background-color: #ff385c;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-between;
+    padding: 15px;
   }
 
   header nav {
@@ -145,20 +147,21 @@ footer p {
 
   form {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .group {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-flow: row nowrap;
     align-items: center;
   }
 
   .vacation-form .item {
-    display: flex block;
+    display: block;
     flex: 1 1 auto;
-    flex-direction: column;
+    flex-direction: row;
+    width: fit-content;
   }
 
   .item label
