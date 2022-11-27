@@ -147,7 +147,8 @@ footer p {
 
   form {
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    font-size: 10px;
   }
 
   .group {
